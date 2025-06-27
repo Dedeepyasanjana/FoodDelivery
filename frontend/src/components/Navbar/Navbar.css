@@ -50,6 +50,39 @@
     border-radius:5px;
     background-color: rgb(232, 76, 4);
 }
+.navbar-profile{
+    position:relative;
+}
+.nav-profile-dropdown{
+    position:absolute;
+    display:none;
+    right:0;
+    z-index:1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    background-color: #fff2ef;
+    padding:12px 25px;
+    border-radius:4px;
+    border:1px solid #055c66;
+    outline:2px solid white;
+    list-style:none;
+}
+.nav-profile-dropdown li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+
+}
+.nav-profile-dropdown img{
+    width:20px;
+}
+.nav-profile-dropdown li:hover{
+    color:#055c66;
+}
 @media (max-width:1050px){
     .navbar .logo{
         width:140px;
@@ -58,7 +91,7 @@
         gap:20px;
         font-size:17px;
     }
-    .nav-right{
+    .navbar-right{
         gap:30px;
     }
     .navbar-right img{
@@ -77,7 +110,7 @@
         gap:15px;
         font-size:16px;
     }
-    .nav-right{
+    .navbar-right{
         gap:20px;
     }
     .navbar-right img{
