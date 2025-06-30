@@ -6,6 +6,8 @@ import cartRouter from './routes/cartRoute.js'
 import userRouter from './routes/userRoute.js'
 import 'dotenv/config'
 import orderRouter from './routes/orderRoute.js'
+// app.js or server.js (top of file)
+
 
 
 //app config 
